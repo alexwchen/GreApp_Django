@@ -1,0 +1,183 @@
+/*******************************************************
+**			Graphing Frame
+**				Training Tab
+**
+********************************************************/
+
+/* headers */
+.test_header
+{
+	width:100%;
+	margin-top:10px;
+	display:inline-block;
+	border-radius: 10px;
+	/*border: 1px solid #042614;*/
+}
+.test_header_config_section
+{
+	width:100%;
+	height:40px;
+	margin-top:5px;
+	margin-bottom:5px;
+	float:left;
+	display:none;
+	/*border: 1px solid #042614;*/
+}
+
+.test_config_outter
+{
+	width:100%;
+	height:40px;
+	margin-bottom:15px;
+	float:left;	
+}
+.test_header_label
+{
+	width:200px;
+	height:30px;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	float:left;
+	font-family:Arial;
+	font-size:20px;
+	/*border: 1px solid #042614;*/
+}
+
+.test_header_dropdown
+{
+	margin-top:10px;
+	float:left;
+	font-family:Arial;
+	font-size:20px;
+}
+
+.test_question_number_input
+{
+	width:50px;
+	height:30px;
+	margin-top:10px;
+	margin-left:5px;
+	float:left;
+	font-family:Arial;
+	font-size:20px;
+	/*border: 1px solid #042614;*/
+}
+
+
+/* questions */
+.test_frame
+{
+	width:100%;
+	margin-bottom:8px;
+	margin-top:10px;
+	border-top: 1px solid #042614;
+	display:inline-block;
+	/*border: 1px solid #042614;*/
+}
+
+.test_question_frame
+{
+	width:700px;
+	float:left;
+	margin-top:20px;
+	margin-bottom:8px;
+	font-family:Arial;
+	font-size:20px;
+	/*border: 1px solid #042614;*/
+}
+
+.test_loop_counter
+{
+	width:40px;
+	float:left;
+	margin-left:30px;
+	margin-top:20px;
+	margin-bottom:8px;
+	font-family:Arial;
+	font-size:20px;
+	/*border: 1px solid #042614;*/
+}
+
+.test_option_frame
+{
+	width:100%;
+	height:40px;
+	margin-top:2px;
+	font-family:Arial;
+	font-size:20px;	
+	cursor:pointer;
+	display:inline-block;
+	/*border: 1px solid #042614;*/
+}
+
+.test_option_frame_inner
+{
+	width:90%;
+	margin-top:8px;
+	margin-left:72px;
+	cursor:pointer;
+	/*border: 1px solid #042614;*/
+}
+
+.test_answer_frame
+{
+	display:none;
+}
+.test_result_frame
+{
+	display:none;	
+}
+
+
+.test_block
+{
+	border-bottom: 1px solid #042614;	
+}
+
+/* config button */
+.test_button_config
+{
+	height:40px;
+	float:right;
+	text-align:center;
+	cursor:pointer;
+	color:#042614;
+	font-family:Arial;
+	font-size:20px;
+	margin-right:10px;
+	border-radius: 10px;
+	border: 5px solid #fcae14;
+}
+
+.test_button_inner
+{
+	margin-top:10px;
+	margin-right:10px;
+	margin-left:10px;
+	/*border: 1px solid #042614;*/
+}
+
+
+/* submit button */
+.submit_button_outter
+{
+	width:800px;
+	height:50px;
+	margin-left:15px;
+	margin-top:15px;
+	float:right;
+	text-align:center;
+	cursor:pointer;
+	color:#042614;
+	font-family:Arial;
+	font-size:25px;
+	border-radius: 10px;
+	border: 5px solid #fcae14;
+}
+
+.submit_button_inner
+{
+	margin-top:10px;
+	/*border: 1px solid #042614;*/
+}

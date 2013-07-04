@@ -1,0 +1,223 @@
+/*******************************************************
+**			Graphing Frame
+**				Training Tab
+**
+********************************************************/
+
+/* headers */
+.training_header
+{
+	width:100%;
+	height:40px;
+	margin-bottom:8px;
+	margin-top:10px;
+	/*border: 1px solid #042614;*/
+}
+
+.training_header_select_label
+{
+	width:150px;
+	height:30px;
+	margin-top:10px;
+	margin-right:5px;
+	float:right;
+	font-family:Arial;
+	font-size:20px;
+	/*border: 1px solid #042614;*/
+}
+
+.training_header_select
+{
+	margin-top:10px;
+	float:right;
+	font-family:Arial;
+	font-size:20px;
+}
+
+/* questions */
+.training_frame
+{
+	width:100%;
+	margin-bottom:8px;
+	margin-top:10px;
+	border-top: 1px solid #042614;
+	/*border: 1px solid #042614;*/
+}
+
+.training_question_frame
+{
+	width:100%;
+	margin-top:20px;
+	margin-bottom:8px;
+	font-family:Arial;
+	font-size:20px;
+	/*border: 1px solid #042614;*/
+}
+
+.training_option_frame
+{
+	width:750px;
+	height:40px;
+	float:left;
+	margin-top:2px;
+	font-family:Arial;
+	font-size:20px;	
+	cursor:pointer;
+	display:inline-block;
+	/*border: 1px solid #042614;*/
+}
+
+.training_option_frame_inner
+{
+	width:90%;
+	margin-top:8px;
+	margin-left:40px;
+	cursor:pointer;
+	/*border: 1px solid #042614;*/
+}
+
+.training_answer_frame
+{
+	display:none;
+}
+
+/* confirm and next */
+.training_button_frame
+{
+	width:100%;
+	height:50px;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-family:Arial;
+	font-size:25px;	
+	/*border: 1px solid #042614;*/
+}
+.training_button_inner
+{
+	margin-top:10px;
+}
+
+.training_button_ok
+{
+	width:200px;
+	height:50px;
+	text-align:center;
+	float:right;
+	cursor:pointer;
+	margin-right:10px;
+	margin-bottom:20px;
+	margin-top:20px;
+	border-radius: 10px;
+	border: 5px solid #042614;
+}
+
+.training_button_next
+{
+	width:200px;
+	height:50px;
+	text-align:center;
+	cursor:pointer;
+	display:none;
+	float:right;
+	margin-bottom:20px;
+	margin-top:20px;
+	border-radius: 10px;
+	border: 5px solid #fcae14;
+}
+
+/* hint or messages*/
+.training_message_frame
+{
+	height:50px;
+	float:left;
+	cursor:pointer;
+	margin-right:10px;
+	display:none;
+	margin-bottom:20px;
+	margin-top:20px;
+	border-radius: 10px;
+	border: 5px solid #042614;
+}
+.training_message_inner
+{
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+/* mark_as_important button */
+.mark_as_important_frame
+{
+	height:50px;
+	float:left;
+	cursor:pointer;
+	margin-right:10px;
+	margin-bottom:20px;
+	margin-top:20px;
+	display:none;
+	border-radius: 10px;
+	border: 5px solid #042614;
+}
+.mark_as_important_inner
+{
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+/* queues for right or wrong answers */
+.enchance_queue
+{
+	display:inline-block;
+	border: 5px solid red;
+	display:none;
+}
+
+.fresh_queue
+{
+	display:inline-block;
+	/*border: 5px solid purple;*/
+}
+
+.training_block
+{
+	display:none;
+	width:800px;
+	/*border: 5px solid purple;*/
+}
+
+/* pro user tip */
+.training_mode_detail_answer
+{
+	width:100%;
+	border-radius: 10px;
+	border: 1px solid #042614;
+}
+
+
+/* sound button */
+
+.vocabulary_sound_training
+{
+	width:30px;
+	height:40px;
+	margin-right:5px;
+	margin-left:5px;
+	float:left;
+	cursor:pointer;
+	font-size:20px;
+	font-family:Arial;
+	/*border: 1px solid #042614;*/
+}
+
+.vocabulary_sound_image
+{
+	width:"25px";
+	height:"25px";
+	margin-top:10px;
+}
+
+.vocabulary_sound_training_text
+{
+	display:none;
+}

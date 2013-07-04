@@ -1,0 +1,76 @@
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/media/vocabulary_training/training_mode.css" />		
+
+
+<div class='training_header'>
+	<select class='training_header_select'>
+		<option>Definition</option>
+		<option>Extra Definition</option>
+		<option>Example Sentence</option>
+		<option>Synonym</option>
+		<option>Mix</option>		
+	</select>
+	
+	<div class='training_header_select_label'>Question Type:</div>
+</div>
+<div class='training_frame'>	
+	<div class='fresh_queue'>
+		{% for question,options in train_quiz.items %}	
+			<div class='training_block'>
+				<div class='training_question_frame'>
+					{{ question }}
+				</div>
+
+				{% for option in options %}	
+				<div class='vocabulary_sound_training'>
+					<div class='vocabulary_sound_image'>
+						<img src="/media/Images/speaker.jpeg" width="25px" height="25px"/>
+					</div>
+					<div class='vocabulary_sound_training_text'>
+						{{ option.1 }}
+					</div>
+				</div>
+				
+				<div class='training_option_frame'>
+					<div class='training_option_frame_inner'>{{ option.1 }}</div>			
+					<div class='training_answer_frame'>{{ option.0 }}</div>
+				</div>
+				{% endfor %}	
+				
+				<div class='training_button_frame'>
+
+					<div class='training_button_next'>
+						<div class='training_button_inner'>NEXT</div>
+					</div>
+
+					<div class='training_button_ok'>
+						<div class='training_button_inner'>OK</div>
+					</div>
+
+					<div class='training_message_frame'>
+						<div class='training_message_inner'>
+						</div>
+					</div>
+
+					<div class='mark_as_important_frame'>
+						<div class='mark_as_important_inner'>
+							Mark as Important
+						</div>
+					</div>	
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	
+	<div class='training_mode_detail_answer'>
+		{% include "vocabulary_training/training_mode_detail_answer.html" %}
+	</div>
+	
+	<div class='enchance_queue'></div>
+	<div id='training_garbage'></div>
+</div>						
+					
+					
+<!-- JS -->	
+<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+<script type='text/javascript' src="/media/vocabulary_training/training_mode.js"></script>

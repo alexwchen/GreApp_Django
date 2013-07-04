@@ -1,0 +1,45 @@
+
+{% extends "vocabulary_training/base_home.html" %}
+
+{% block content %}
+	<link rel="stylesheet" type="text/css" href="/media/create_new_list/create_vocabulary_list.css" />		
+
+	<div class='list_frame'>
+		<div class='list_title_label'><div class='list_title_inner'>Title:</div></div>
+		<div class='list_title_content'>
+			<div id='list_title' class='list_title_inner'>Please Type Your Title</div>
+			<input type="text" class='input_box' ></input>
+		</div>
+	</div>
+	
+	<div class='list_frame'>
+		<div class='list_title_label'><div class='list_title_inner'>Author:</div></div>
+		<div class='list_title_content'>
+			<div id='author_name' class='list_title_inner'>Please Type Your Name</div>
+			<input type="text" class='input_box' ></input>
+		</div>
+	</div>
+		
+	<!-- DISPLAY CONTENT TABS-->
+	<div class='graph_tabs'>
+		<div class='graph_tabs_top_menu'>
+			<div id='default_tab' class='graph_tabs_top_menu_options'> 
+				<div class='graph_tabs_top_menu_options_text_box'><b> Import </b></div>
+			</div>
+			<div id='import_option' class='graph_tabs_top_menu_options'> <div class='graph_tabs_top_menu_options_text_box'><b> Manual </b></div></div>
+		</div>
+						
+		<div id='Manual_Tab' class='graph_content'>
+			{% include "create_new_list/manual_section.html" %}
+		</div>
+		
+		<div id='Import_Tab' class='graph_content'>
+			{% include "create_new_list/import_section.html" %}
+		</div>
+		
+		
+	</div>
+
+	<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+	<script type='text/javascript' src="/media/create_new_list/create_vocabulary_list.js"></script>
+{% endblock %}

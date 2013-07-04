@@ -1,0 +1,60 @@
+{% extends "vocabulary_training/base_home.html" %}
+
+{% block content %}
+	<link rel="stylesheet" type="text/css" href="/media/auth_control/login.css" />		
+
+
+	<div class='signin_title'>
+		<div class='signin_title_inner'>
+			Sign In
+		</div>
+	</div>
+	
+	<div class='login_frame'>		
+		<div class='user_input_frame'>
+			<input class='input_box_text' type="text" value='Please Enter Your Email Address' />
+		</div>
+		<div class='user_input_frame'>
+			<input class='input_box_text' type="text" value='Please Enter Your Password' />
+		</div>
+		
+		<div class='message_box'>
+			<div class='message_box_label' >Don't Have An Account Yet?</div>
+			<div class='message_box_link'>
+				Sign Up
+			</div>
+		</div>
+		
+		<div class='login_ok_bottom_outter'>
+			<div class='login_ok_bottom_inner'>
+				OK
+			</div>
+		</div>
+	</div>
+
+
+	<div class='register_frame'>		
+		<div class='user_input_frame'>
+			<input class='input_box_text' type="text" value='Please Enter Your Email Address' />
+		</div>
+		<div class='user_input_frame'>
+			<input class='input_box_text' type="text" value='Please Enter Your Password' />
+		</div>
+		
+		<div class='message_box'>
+			<div class='message_box_label' >What's Up?</div>
+			<div class='message_box_link'>
+				Sign Up
+			</div>
+		</div>
+		
+		<div class='login_ok_bottom_outter'>
+			<div class='login_ok_bottom_inner'>
+				OK
+			</div>
+		</div>
+	</div>
+
+	<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+	<script type='text/javascript' src="/media/auth_control/login.js"></script>
+{% endblock %}

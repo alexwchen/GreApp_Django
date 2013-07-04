@@ -1,0 +1,40 @@
+{% extends "vocabulary_training/base_home.html" %}
+
+{% block content %}
+	<link rel="stylesheet" type="text/css" href="/media/team/display_team.css" />		
+	
+	{% for member in members %}
+	<div class='team_member_title_frame'>
+		{{ member.position }}
+	</div>
+	
+	<div class='team_member_frame'>
+		<div class='team_member_content_left'>
+			<div class='team_member_image_outter'>
+				<div onclick=location.href='{{member.link}}' class='team_member_image_inner'>
+					<img src= {{ member.image }} width="160px" height="160px"/>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class='team_member_content_right'>
+			<div onclick=location.href='{{member.link}}' class='team_member_content_right_name'>
+				{{ member.name }}
+			</div>
+			{% for para in member.paragraph %}
+				<div class='team_member_content_right_paragraph_title'>
+					{{ para.title }}
+				</div>
+				<div class='team_member_content_right_paragraph_content'>
+					{{ para.content }}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	{% endfor %}
+		
+
+	<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+	<script type='text/javascript' src="/media/team/display_team.js"></script>
+{% endblock %}

@@ -1,0 +1,356 @@
+/********************/
+/* vocabulary frame */
+/********************/
+
+.training_ans_main_vocabulary_frame
+{
+	margin-top:30px;
+	/*border: 1px solid #042614;*/
+	display:none;
+}
+
+.training_ans_vocabulary_frame_outter
+{
+	/*border-top: 1px solid #042614;*/
+	/*border: 1px solid #042614;*/
+}
+
+.training_ans_vocabulary_frame_inner
+{
+	width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
+	display:inline-block;
+	/*border: 1px solid #042614;*/
+}
+
+/**************************/
+/* vocabulary simple info */
+/**************************/
+
+.training_ans_vocabulary_name
+{
+	width:120px;
+	float:left;
+	margin-left:50px;
+	cursor:pointer;
+	font-size:20px;
+	font-family:Arial;
+	/*border: 1px solid #042614;*/
+}
+
+.training_ans_vocabulary_sound
+{
+	width:30px;
+	height:40px;
+	margin-right:5px;
+	margin-left:5px;
+	float:left;
+	cursor:pointer;
+	font-size:20px;
+	font-family:Arial;
+	/*border: 1px solid #042614;*/
+}
+
+.training_ans_vocabulary_name_input_box
+{
+	width:120px;
+	height:28px;
+	float:left;
+	font-size:20px;
+	font-family:Arial;
+	display:none;
+	float:left;
+}
+
+.training_ans_vocabulary_definition
+{
+	width:560px;
+	float:left;
+	font-size:20px;
+	cursor:pointer;
+	font-family:Arial;
+	display:inline-block;
+	/*border: 1px solid #042614;*/
+}
+
+.training_ans_vocabulary_definition_input_box
+{
+	width:560px;
+	height:28px;
+	font-size:20px;
+	font-family:Arial;
+	float:left;
+	display:none;
+}
+
+/****************************/
+/* vocabulary detailed info */
+/****************************/
+
+.training_ans_vocabulary_more_outter
+{
+	width:100%;
+	font-size:20px;
+	font-family:Arial;
+	border-radius: 5px;
+	/*border: 1px solid #042614;*/
+}
+
+.training_ans_vocabulary_more_inner
+{
+	width:90%;
+	margin-left:50px;
+	/*border: 1px solid #042614;*/
+}
+.training_ans_vocabulary_more_title
+{
+	margin-bottom:5px;	
+}
+.training_ans_vocabulary_more_content
+{
+	margin-left:30px;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+
+.training_ans_vocabulary_more_content_input
+{
+	margin-left:30px;
+	font-family:Arial;
+	font-size:20px;
+	display:none;
+}
+
+
+.training_ans_vocabulary_add_info_button
+{
+	width:100%;
+	height:30px;
+	text-align:center;
+	font-size:20px;
+	font-family:Arial;
+	border-radius: 5px;
+	cursor:pointer;
+	border: 1px solid #042614;
+}
+
+.training_ans_vocabulary_add_info_button_inner
+{
+	margin-top:5px;
+}
+/******************************/
+/* vocabulary additional info */
+/******************************/
+
+.training_ans_vocabulary_more_outter_additional
+{
+	width:100%;
+	font-size:20px;
+	font-family:Arial;
+	margin-top:10px;
+	display:none;
+	border-radius: 5px;
+	border: 1px solid #042614;
+}
+
+.training_ans_vocabulary_more_inner_additional
+{
+	width:90%;
+`	/*border: 1px solid #042614;*/
+}
+.training_ans_vocabulary_more_title_additional
+{
+	margin-bottom:5px;	
+}
+.training_ans_vocabulary_more_content_additional
+{
+	margin-left:30px;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+
+/******************************/
+/* garbage_collection */
+/******************************/
+.training_ans_garbage_collection
+{
+	display:none;
+}
+
+.training_ans_vocabulary_status_info
+{
+	margin-top:5px;
+	margin-bottom:5px;
+	text-align:center;
+	font-size:15px;
+	color:#042614;
+	font-family:Arial;
+	/*border: 1px solid #042614;*/
+}
+
+
+/******************************/
+/* statistics */
+/******************************/
+.statistic_frame
+{
+}
+
+.statistic_frame_title_outter
+{
+	width:740px;
+	margin-left:30px;
+	margin-top:30px;
+	margin-bottom:15px;
+	font-size:25px;
+	font-family:Arial;
+	border-bottom: 1px solid #042614;
+	/*border: 1px solid #042614;*/
+}
+.statistic_frame_title_inner
+{
+	margin-bottom:10px;
+	/*border: 1px solid #042614;*/
+}
+
+/* statistics sub frames */
+.statistic_sub_frame_title
+{
+	width:740px;
+	height:30px;
+	margin-top:30px;
+	margin-left:30px;
+	margin-bottom:5px;
+	font-family:Arial;
+	font-size:23px;
+	/*border: 1px solid #042614;*/
+}
+
+.statistic_sub_frame_content
+{
+	width:740px;
+	margin-left:30px;
+	margin-bottom:30px;
+	border-radius: 15px;
+	/*border: 1px solid #042614;*/
+}
+
+
+/* general statistics */
+.general_statistic_frame
+{
+	width:100%;	
+	margin:auto;
+	display:inline-block;
+	/*border: 1px solid #042614;*/
+}
+
+.general_statistic_total_label_outter
+{
+	float:left;
+	width:150px;
+	height:50px;
+	margin-top:10px;
+	margin-left:20px;
+	font-size:25px;
+	font-family:Arial;
+	background-color:#bde9fb;	
+	border-radius: 10px;
+	border: 5px solid #042614;
+}
+.general_statistic_correct_label_outter
+{
+	float:left;
+	width:150px;
+	height:50px;
+	margin-top:10px;
+	margin-left:35px;
+	font-size:25px;
+	font-family:Arial;
+	background-color:#bdfbe4;	
+	border-radius: 10px;
+	border: 5px solid #042614;
+}
+
+.general_statistic_wrong_label_outter
+{
+	float:left;
+	width:150px;
+	height:50px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:35px;
+	font-size:25px;
+	font-family:Arial;
+	background-color:#fbbdc3;	
+	border-radius: 10px;
+	border: 5px solid #042614;
+}
+
+.general_statistic_count
+{
+	margin-top:23px;
+	margin-left:15px;
+	margin-right:10px;
+	font-size:28px;
+	font-family:Arial;	
+	float:left;
+	/*border: 1px solid #042614;*/
+}
+
+.general_statistic_label_inner
+{
+	width:100%;
+	float:left;
+	margin-top:12px;
+	font-size:25px;
+	text-align:center;
+	font-family:Arial;	
+	border-radius: 10px;
+	/*border: 1px solid #042614;*/
+}
+
+
+
+/* weak words */
+.weak_words_frame
+{
+	width:100%;	
+	margin:auto;
+	display:inline-block;
+	/*border: 1px solid #042614;*/
+}
+
+.weak_words_word_outter
+{
+	float:left;
+	width:690px;
+	height:40px;
+	margin-top:10px;
+	margin-left:20px;
+	font-size:25px;
+	font-family:Arial;
+	border-radius: 10px;
+	border: 1px solid #042614;
+}
+
+.weak_words_word_inner
+{
+	float:left;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:8px;
+	font-size:20px;
+	font-family:Arial;	
+	text-align:center;
+	/*border: 1px solid #042614;*/
+}
+
+
+.weak_words_word_hidden_count
+{
+	display:block;
+	color:#3aef8f;
+}

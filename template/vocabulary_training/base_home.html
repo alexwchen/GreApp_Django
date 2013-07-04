@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="/media/vocabulary_training/base_home.css" />		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-33814525-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+	</head>
+
+    <body>
+		<!-- TOP -->		
+		<div class='logo_frame' onclick=location.href='/training/home/'>
+			<img src="/media/Images/maryleon.jpg" width="250" height="50"/>
+		</div>
+		
+		<div class='top_frame'>			
+				<div class='top_menu_frame'>
+					<div class ='top_menu_frame_menu_options_left_most'><a class='top_menu_link' href="/training/home/">HOME</a></div>
+					<div class ='top_menu_frame_menu_options'><a class='top_menu_link' href="/create/">CREATE</a></div>
+					<div class ='top_menu_frame_menu_options'><a class='top_menu_link' href="/team/">TEAM</a></div>
+					<div class ='top_menu_frame_menu_login'><a class='top_menu_link' href="/auth_control/login">SIGN IN</a></div>
+				</div>								
+		</div>
+		
+		<div class='main_frame'>
+			
+			
+			<!-- MIDDLE -->
+			<div class='middle_frame'>
+				<div class='blank_frame'></div>
+				
+		        {% block content %} {% endblock %}
+				
+			</div>
+			
+			
+			
+			<!-- FOOTER FRAME -->
+			<div class='footer_frame'>
+				<div class='footer_text'>
+					Alexander Chen 2012
+				</div>
+			</div>
+			
+		</div>
+		<!-- JS -->	
+		<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+		<script type='text/javascript' src="/media/vocabulary_training/base_home.js"></script>
+    </body>
+</html>

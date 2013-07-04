@@ -1,0 +1,39 @@
+{% extends "vocabulary_training/base_home.html" %}
+
+{% block content %}
+	<link rel="stylesheet" type="text/css" href="/media/vocabulary_training/display_single_list.css" />		
+
+	<div class='list_frame'>
+		<div class='list_title_label'><div class='list_title_inner'>Title:</div></div>
+		<div class='list_title_content'><div id='list_title' class='list_title_inner'>{{ title }}</div></div>
+	</div>
+	
+	<div class='list_frame'>
+		<div class='list_title_label'><div class='list_title_inner'>Author:</div></div>
+		<div class='list_title_content'><div id='author_name' class='list_title_inner'>{{ author }}</div></div>
+	</div>
+		
+	<!-- DISPLAY CONTENT TABS-->
+	<div class='graph_tabs'>
+		<div class='graph_tabs_top_menu'>
+			<div id='default_tab' class='graph_tabs_top_menu_options'> 
+				<div class='graph_tabs_top_menu_options_text_box'><b> Study </b></div>
+			</div>
+			<div class='graph_tabs_top_menu_options'> <div class='graph_tabs_top_menu_options_text_box'><b> Train </b></div></div>
+			<div class='graph_tabs_top_menu_options'> <div class='graph_tabs_top_menu_options_text_box'><b> Test </b></div></div>						
+		</div>
+		
+		<div id='Study_Tab' class='graph_content'>
+			{% include "vocabulary_training/study_mode.html" %}
+		</div>
+		<div id='Train_Tab' class='graph_content'>
+			{% include "vocabulary_training/training_mode.html" %}
+		</div>
+		<div id='Test_Tab' class='graph_content'>
+			{% include "vocabulary_training/test_mode.html" %}
+		</div>
+	</div>
+
+	<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+	<script type='text/javascript' src="/media/vocabulary_training/display_single_list.js"></script>
+{% endblock %}

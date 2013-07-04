@@ -1,0 +1,36 @@
+
+{% extends "vocabulary_training/base_home.html" %}
+{% load vocabulary_training_extra %}
+
+{% block content %}
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/media/vocabulary_training/display_all_vocabulary_lists.css" />		
+
+	<div class='list_header_container'>
+		<div class='list_header_name'>List Name</div>
+		<div class='list_header_author'>Author</div>
+		<div class='list_header_date'>Create Date</div>
+		<div class='list_header_terms'>Terms</div>		
+	</div>
+	
+	<div class='list_container'>
+		<div class='black_container'></div>
+	    {% for list in lists %}
+			<div onclick =location.href="/training/{{ list.title|term_title_to_url }}/{{ list.authors|term_title_to_url }}/{{ list.id }}" class='list_item_container'>
+		        <div class='list_name_item'>
+					{{ list.title }}					
+				</div>
+		        <div class='list_author_item'>{{ list.authors }}</div>
+		        <div class='list_date_item'>{{ list.creation_date }}</div>
+				<div class='list_terms_item'>{{ list.terms }}</div>		
+				<div class='list_id_hidden'>{{ list.id }}</div>
+			</div>
+	    {% endfor %}
+		<div class='black_container'></div>
+	
+	</div>
+	<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+	<script type='text/javascript' src="/media/vocabulary_training/display_all_vocabulary_lists.js"></script>
+	
+{% endblock %}
+

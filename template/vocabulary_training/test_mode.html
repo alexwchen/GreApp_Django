@@ -1,0 +1,66 @@
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/media/vocabulary_training/test_mode.css" />		
+
+
+<div class='test_header'>
+	<div class='test_header_config_section'>
+		<div class='test_header_label'>Exam Type:</div>
+		<select class='test_header_dropdown'>
+			<option>Multiple Choice</option>
+		</select>
+	</div>
+	<div class='test_header_config_section'>
+		<div class='test_header_label'>Question Type:</div>
+		<select id='test_category' class='test_header_dropdown'>
+			<option>Definition</option>
+			<option>Extra Definition</option>
+			<option>Example Sentence</option>
+			<option>Synonym</option>
+			<option>Mix</option>		
+		</select>
+	</div>
+	<div class='test_header_config_section'>
+		<div class='test_header_label'>Question Number:</div>	
+		<input class='test_question_number_input'type="text" value="20" />
+	</div>
+	<div class='test_config_outter'>
+		<div class='test_button_config'> 
+			<div class='test_button_inner'>
+				<b>Configuration</b>
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+<div class='test_frame'>	
+	{% for question,options in test_question.items %}	
+		<div class='test_block'>
+			<div class='test_loop_counter'>
+				{{ forloop.counter }}.				
+			</div>
+			<div class='test_question_frame'>
+				{{ question }}
+			</div>
+			{% for option in options %}		
+			<div class='test_option_frame'>
+				<div class='test_option_frame_inner'>{{ option.1 }}</div>			
+				<div class='test_answer_frame'>{{ option.0 }}</div>
+				<div class='test_result_frame'>n</div>
+				
+			</div>
+			{% endfor %}	
+		</div>
+	{% endfor %}
+		<div class='submit_button_outter'>
+			<div class='submit_button_inner'>
+				<b>Submit</b>
+			</div>
+		</div>
+	
+</div>						
+					
+					
+<!-- JS -->	
+<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+<script type='text/javascript' src="/media/vocabulary_training/test_mode.js"></script>

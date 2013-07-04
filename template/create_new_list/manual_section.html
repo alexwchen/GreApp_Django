@@ -1,0 +1,50 @@
+
+	<link rel="stylesheet" type="text/css" href="/media/create_new_list/manual_section.css" />		
+
+	<div class='manual_header_label_term'><b>Term</b></div>
+	<div class='manual_header_label_def'><b>Definition</b></div>
+	<div class='manual_big_container'>
+
+		{% for i in default_block_number %}
+			<div class='manual_input_container'>
+				<div class='number_label'>{{ forloop.counter }}.</div>
+				<input type="text" class='term_input_box' ></input>
+				<input type="text" class='def_input_box' ></input>
+			</div>
+		{% endfor %}
+				
+	</div>
+	
+	<div class='button_container'>
+		<div class='more_button_outter'>
+			<div class='more_button_inner'>
+				More
+			</div>
+		</div>
+
+		<div class='save_button_outter'>
+			<div class='save_button_inner'>
+				Save
+			</div>
+		</div>
+		<div class='message_container'>
+			<div class='message_content'>
+				We Are Downloading Data From A Dictionary Now...</br>
+			</div>
+			<div class='message_content'>
+				This Will Probably Take A While 30 - 60 Second. </br>
+			</div>
+			<div class='message_content'>
+				We Will Fix This Pretty Soon!</br>
+			</div>
+			<div class='message_content'>
+				This Page Will Redirect To Your List When It Is Done. </br>
+			</div>
+			<div class='message_content'>
+				Thank You For Your Patience! :)</br>
+			</div>
+		</div>
+		
+	</div>
+	<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+	<script type='text/javascript' src="/media/create_new_list/manual_section.js"></script>

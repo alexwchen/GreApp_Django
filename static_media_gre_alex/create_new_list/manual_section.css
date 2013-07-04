@@ -1,0 +1,148 @@
+/*******************************************************
+**			Manual Container
+**
+********************************************************/
+.manual_header_label_term
+{
+	float:left;
+	color:#042614;
+	margin-top:20px;
+	margin-left:50px;
+	font-size:20px;
+	font-family:Arial;
+	/*border: 1px solid #042614;*/
+}
+
+.manual_header_label_def
+{
+	float:left;
+	color:#042614;
+	margin-top:20px;
+	margin-left:250px;
+	font-size:20px;
+	font-family:Arial;
+	/*border: 1px solid #042614;*/
+}
+
+.manual_big_container
+{
+	width:100%;
+	display:inline-block;
+	margin-top:10px;
+	border-top: 1px solid #042614;
+}
+
+/*******************************************************
+**			Each Manual Input Box
+**
+********************************************************/
+.manual_input_container
+{
+	width:100%;
+	margin-top:10px;
+	display:inline-block;
+	/*border: 1px solid #042614;*/
+}
+
+.number_label
+{
+	width:40px;
+	float:left;
+	font-size:20px;
+	font-family:Arial;
+	/*border: 1px solid #042614;*/
+}
+
+.term_input_box
+{
+	width:240px;
+	float:left;
+	margin-left:10px;
+	font-size:20px;
+	font-family:Arial;
+	/*border-radius: 10px;*/
+}
+
+.def_input_box
+{
+	width:455px;
+	float:left;
+	margin-left:47px;
+	font-size:20px;
+	font-family:Arial;
+	/*border-radius: 10px;*/	
+}
+
+/*******************************************************
+**			Buttons
+**				More
+**				Save
+********************************************************/
+.button_container
+{
+	width:100%;
+	display:inline-block;
+}
+
+.more_button_outter
+{
+	width:380px;
+	height:50px;
+	float:left;
+	margin-top:20px;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:25px;
+	font-family:Arial;
+	cursor:pointer;
+	border-radius: 10px;	
+	border: 5px solid #042614;
+}
+.more_button_inner	
+{
+	margin-top:10px;
+}
+
+
+.save_button_outter
+{
+	width:380px;
+	height:50px;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:25px;
+	font-family:Arial;
+	cursor:pointer;
+	border-radius: 10px;	
+	border: 5px solid #042614;
+}
+.save_button_inner	
+{
+	margin-top:10px;
+}
+/*******************************************************
+**			Message Box
+**
+********************************************************/
+.message_container
+{
+	width:755px;
+	height:400px;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:25px;
+	font-family:Arial;
+	display:none;
+	border-radius: 10px;	
+	border: 5px solid #042614;	
+}
+.message_content
+{
+	margin-top:30px;
+}

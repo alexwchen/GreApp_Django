@@ -1,0 +1,132 @@
+/*******************************************************
+**			Middle Frame
+**				Content
+**				Cluster Engine Interface
+********************************************************/
+
+.list_frame
+{
+	width:100%;
+	height:35px;
+	margin-bottom:10px;
+	display:inline-block;
+	/*border: 1px solid #042614;*/
+}
+
+.list_title_label
+{
+	width:100px;
+	height:35px;
+	float:left;
+	margin-left:45px;
+	font-family:Arial;
+	font-size:20px;
+	/*border: 1px solid #042614;*/
+}
+
+.list_title_content
+{
+	width:700px;
+	height:35px;
+	float:left;
+	text-align:center;
+	margin-left:5px;
+	font-family:Arial;
+	font-size:20px;
+	cursor:pointer;
+	border-radius: 10px;
+	border: 1px solid #042614;	
+}
+
+.list_title_inner
+{
+	margin-top:7px;
+}
+
+
+/*******************************************************
+**			Graphing Frame
+**				Graph Tabs
+**
+********************************************************/
+
+.graph_tabs
+{
+	width:850px;
+	margin-left:45px;	
+	margin-top:20px;
+	margin-bottom:25px;
+	border-radius: 10px;
+	border: 1px solid #042614;		
+}
+
+.graph_tabs_top_menu
+{
+	width:850px;
+	height:50px;
+	background-color:#042614;
+	border-radius: 10px;
+	border: 1px solid #042614;
+}
+
+.graph_tabs_top_menu_options
+{
+	height:40px;
+	width:150px;
+	margin-left:10px;
+	margin-top:5px;
+	float:left;
+	font-family:Arial;
+	font-size:20px;
+	color:#042614;
+	cursor:pointer;
+	background-color:white;
+	border-radius: 5px;
+}
+
+.graph_tabs_top_menu_options_selected
+{
+	height:40px;
+	width:150px;
+	margin-left:5px;
+	margin-top:5px;
+	float:left;
+	font-family:Arial;
+	font-size:20px;
+	color:#042614;
+	cursor:pointer;
+	background-color:white;
+	border-radius: 5px;
+	border: 5px solid #fcae14;
+}
+
+.graph_tabs_top_menu_options_text_box
+{
+	width:55px;
+	margin-top:8px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 1px solid #fcae14;*/
+}
+
+.graph_content
+{
+	width:800px;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid white;
+}
+
+/*******************************************************
+**			Title, Author Input Box
+**
+********************************************************/
+.input_box
+{
+	width:100%;
+	height:100%;
+	font-size:20px;
+	font-family:20px;
+	display:none;
+}

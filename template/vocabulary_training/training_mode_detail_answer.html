@@ -1,0 +1,176 @@
+<link rel="stylesheet" type="text/css" href="/media/vocabulary_training/training_mode_detail_answer.css" />		
+
+
+<!-- Display some real time analysis of the question answering -->
+<div class='statistic_frame'>
+	<div class='statistic_frame_title_outter'>
+		<div class='statistic_frame_title_inner'>
+			Statistics
+		</div>
+	</div>
+	
+	<div class='statistic_sub_frame_title'> General Statistic</div>
+	<div class='statistic_sub_frame_content'>
+		
+		<div class='general_statistic_frame'>
+			<div class='general_statistic_total_label_outter'>
+				<div class='general_statistic_label_inner'>
+					Total
+				</div>
+			</div>	
+			<div id='question_answered' class='general_statistic_count'>
+				0
+			</div>
+		
+			<div class='general_statistic_correct_label_outter'>
+				<div class='general_statistic_label_inner'>
+					Correct
+				</div>
+			</div>	
+			<div id='question_answered_right' class='general_statistic_count'>
+				0
+			</div>
+				
+			<div class='general_statistic_wrong_label_outter'>
+				<div class='general_statistic_label_inner'>
+					Wrong
+				</div>
+			</div>	
+			<div id='question_answered_wrong' class='general_statistic_count'>
+				0
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	<div class='statistic_sub_frame_title'> Weak Words</div>
+	<div class='statistic_sub_frame_content'>
+		{% for term in terms %}
+		<div class='weak_words_frame'>
+			<div id='{{ forloop.counter }}'class='weak_words_word_outter'>
+				<div class='weak_words_word_inner'>
+					{{ term.word }}
+				</div>
+				<div class='weak_words_word_hidden_count'>
+					0
+				</div>
+			</div>	
+		</div>
+		{% endfor %}		
+		
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+{% for term in terms %}
+
+<!-- Additional Information for Users Regarding to their question answering -->
+<div class='training_ans_main_vocabulary_frame'>	
+	
+	<div class='training_ans_vocabulary_frame_outter'>
+		<div class='training_ans_vocabulary_frame_inner'>							
+			
+			<div class='training_ans_vocabulary_name_parent'>
+				<div class='training_ans_vocabulary_name'>
+					<div class='training_ans_vocabulary_inner'>
+						{{ term.word }}
+					</div>
+				</div>
+				<textarea class='training_ans_vocabulary_name_input_box'></textarea>
+			</div>
+
+			<div class='training_ans_vocabulary_sound'>
+				<img src="/media/Images/speaker.jpeg" width="25px" height="25px"/>
+			</div>
+			
+			<div class='training_ans_vocabulary_definition_parent'>
+				<div class='training_ans_vocabulary_definition'>
+					<div class='training_ans_vocabulary_inner'>
+						{{ term.definition }}					
+					</div>
+				</div>
+				<textarea class='training_ans_vocabulary_definition_input_box'></textarea>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div class='training_ans_vocabulary_more_outter'>
+		<div class='training_ans_vocabulary_more_inner'>
+		
+			<div id='training_ans_definition' class='training_ans_vocabulary_more_content_training_ans_definition'>
+				<div class='training_ans_vocabulary_more_title'>Definition: </div>
+				{% for defi in term.definitions %}
+					<div class='training_ans_vocabulary_more_content_outter'>
+						<div class='training_ans_vocabulary_more_content'>
+							{{ defi }}
+						</div>										
+						<textarea class='training_ans_vocabulary_more_content_input'></textarea>
+					</div>
+				{% endfor %}
+			</div>
+			
+			<div id='training_ans_synonym' class='training_ans_vocabulary_more_content_training_ans_synonym'>
+				<div class='training_ans_vocabulary_more_title'>Synonyms: </div>
+				{% for syn in term.synonyms %}
+					<div class='training_ans_vocabulary_more_content_outter'>
+						<div class='training_ans_vocabulary_more_content'>
+							{{ syn }}
+						</div>			
+						<textarea class='training_ans_vocabulary_more_content_input'></textarea>
+					</div>	
+				{% endfor %}
+			</div>
+		
+			<div id='training_ans_example' class='training_ans_vocabulary_more_content_training_ans_example'>
+				<div class='training_ans_vocabulary_more_title'>Example Sentences: </div>
+				{% for exp in term.examples %}
+					<div class='training_ans_vocabulary_more_content_outter'>
+						<div class='training_ans_vocabulary_more_content'>
+							{{ exp }}
+						</div>		
+						<textarea class='training_ans_vocabulary_more_content_input'></textarea>
+					</div>		
+				{% endfor %}				
+			</div>
+		
+			<div class='training_ans_vocabulary_add_info_button'>
+				<div class='training_ans_vocabulary_add_info_button_inner'>More</div>
+			</div>
+			<div class='training_ans_vocabulary_status_info'></div>
+			
+		</div>
+	</div>	
+	
+	<div class='training_ans_vocabulary_more_outter_additional'>
+		<div class='training_ans_vocabulary_more_inner_additional'>
+			<div id='training_ans_definition' class='training_ans_vocabulary_more_content_training_ans_definition_additional'>
+				<div class='training_ans_vocabulary_more_title_additional'>Definition: </div>
+			</div>
+			
+			<div id='training_ans_synonym' class='training_ans_vocabulary_more_content_training_ans_synonym_additional'>
+				<div class='training_ans_vocabulary_more_title_additional'>Synonyms: </div>
+			</div>
+
+			<div id='training_ans_example' class='training_ans_vocabulary_more_content_training_ans_example_additional'>
+				<div class='training_ans_vocabulary_more_title_additional'>Example Sentences: </div>
+			</div>		
+		</div>
+	</div>
+		
+</div>
+
+{% endfor %}
+<div id='training_ans_garbage_collection'></div>
+<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+<script type='text/javascript' src="/media/vocabulary_training/training_mode_detail_answer.js"></script>

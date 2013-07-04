@@ -1,0 +1,64 @@
+/*******************************************************
+**			Manual Container
+**
+********************************************************/
+.import_header_label
+{
+	float:left;
+	color:#042614;
+	margin-top:20px;
+	margin-left:50px;
+	font-size:20px;
+	font-family:Arial;
+	/*border: 1px solid #042614;*/
+}
+
+
+.import_big_container
+{
+	width:100%;
+	display:inline-block;
+	margin-top:10px;
+	border-top: 1px solid #042614;
+}
+
+/*******************************************************
+**			Each Manual Input Box
+**
+********************************************************/
+.import_input_box
+{
+	width:710px;
+	height:500px;
+	margin-top:10px;
+	margin-left:50px;
+	font-size:17px;
+	font-family:Arial;
+	/*border: 1px solid #042614;*/
+}
+
+
+/*******************************************************
+**			Buttons
+**				More
+**				Save
+********************************************************/
+.import_button_outter
+{
+	width:700px;
+	height:50px;
+	float:left;
+	margin-top:20px;
+	margin-left:50px;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:25px;
+	font-family:Arial;
+	cursor:pointer;
+	border-radius: 10px;	
+	border: 5px solid #042614;
+}
+.import_button_inner	
+{
+	margin-top:10px;
+}

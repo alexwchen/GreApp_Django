@@ -1,0 +1,125 @@
+/*******************************************************
+**			Display All List Frame
+**				
+**
+********************************************************/
+
+/* list header */
+.list_header_container
+{
+	width:850px;
+	height:40px;
+	margin-left:45px;	
+	margin-top:20px;
+	margin-bottom:10px;
+	font-size:20px;
+	font-family:Arial;
+	border-radius: 10px;
+	border: 1px solid #042614;		
+}
+
+.list_header_name
+{
+	float:left;
+	margin-left:15px;	
+	margin-top:10px;
+	
+	
+}
+
+.list_header_author
+{
+	float:left;
+	margin-left:300px;	
+	margin-top:10px;
+	
+	
+}
+
+.list_header_date
+{
+	float:left;
+	margin-left:110px;	
+	margin-top:10px;
+	
+	
+}
+
+.list_header_terms
+{
+	float:left;
+	margin-left:75px;	
+	margin-top:10px;
+	
+	
+}
+
+/* list */
+
+.list_container
+{
+	width:850px;
+	font-size:20px;
+	margin-bottom:20px;
+	font-family:Arial;
+	margin-left:45px;	
+	border-radius: 10px;
+	border: 1px solid #042614;		
+}
+
+.black_container
+{
+	margin-top:20px;
+}
+
+.list_item_container
+{
+	width:820px;
+	margin-left:15px;
+	margin-top:5px;
+	display:inline-block;
+	cursor:pointer;
+	border-radius: 10px;
+	/*border: 1px solid #042614;*/
+}
+
+.list_name_item
+{
+	width:380px;
+	float:left;
+	margin-top:10px;	
+	/*border: 1px solid #042614;*/
+}
+
+.list_author_item
+{
+	width:150px;
+	float:left;
+	margin-top:10px;
+	margin-left:8px;		
+	/*border: 1px solid #042614;*/
+}
+
+.list_date_item
+{
+	width:150px;
+	float:left;
+	margin-top:10px;
+	margin-left:17px;		
+	/*border: 1px solid #042614;*/
+}
+
+.list_terms_item
+{
+	width:50px;
+	float:left;
+	margin-top:10px;
+	margin-left:50px;		
+	/*border: 1px solid #042614;*/
+}
+
+.list_id_hidden
+{
+	display:none;
+}
+

@@ -1,0 +1,122 @@
+<link rel="stylesheet" type="text/css" href="/media/vocabulary_training/study_mode.css" />		
+
+<div class='vocabulary_header'>
+	<select class='vocabulary_header_select'>
+		<option>Detailed</option>
+		<option>Simple</option>
+	</select>
+	<div class='vocabulary_header_select_label'>Display:</div>
+</div>
+
+{% for term in terms %}
+
+<!-- Start of the Vocabulary Frame -->
+<div class='main_vocabulary_frame'>	
+	<div class='vocabulary_frame_outter'>
+		<div class='vocabulary_frame_inner'>							
+			<div class='vocabulary_number'>
+				<div class='vocabulary_inner'>
+					{{ forloop.counter }}.
+				</div>
+			</div>
+			
+			<div class='vocabulary_name_parent'>
+				<div class='vocabulary_name'>
+					<div class='vocabulary_inner'>
+						{{ term.word }}
+					</div>
+				</div>
+				<textarea class='vocabulary_name_input_box'></textarea>
+			</div>
+			
+			<div class='vocabulary_sound'>
+				<img src="/media/Images/speaker.jpeg" width="25px" height="25px"/>
+			</div>
+			
+			<div class='vocabulary_definition_parent'>
+				<div class='vocabulary_definition'>
+					<div class='vocabulary_inner'>
+						{{ term.definition }}					
+					</div>
+				</div>
+				<textarea class='vocabulary_definition_input_box'></textarea>
+			</div>
+			
+			<div class='vocab_delete_button_frame'>
+				<img src="/media/Images/delete.png" width="20px" height="20px"/>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div class='vocabulary_more_outter'>
+		<div class='vocabulary_more_inner'>
+		
+			<div id='definition' class='vocabulary_more_content_definition'>
+				<div class='vocabulary_more_title'>Definition: </div>
+				{% for defi in term.definitions %}
+					<div class='vocabulary_more_content_outter'>
+						<div class='vocabulary_more_content'>
+							{{ defi }}
+						</div>										
+						<textarea class='vocabulary_more_content_input'></textarea>
+					</div>
+				{% endfor %}
+			</div>
+			
+			<div id='synonym' class='vocabulary_more_content_synonym'>
+				<div class='vocabulary_more_title'>Synonyms: </div>
+				{% for syn in term.synonyms %}
+					<div class='vocabulary_more_content_outter'>
+						<div class='vocabulary_more_content'>
+							{{ syn }}
+						</div>			
+						<textarea class='vocabulary_more_content_input'></textarea>
+					</div>	
+				{% endfor %}
+			</div>
+		
+			<div id='example' class='vocabulary_more_content_example'>
+				<div class='vocabulary_more_title'>Example Sentences: </div>
+				{% for exp in term.examples %}
+					<div class='vocabulary_more_content_outter'>
+						<div class='vocabulary_more_content'>
+							{{ exp }}
+						</div>		
+						<textarea class='vocabulary_more_content_input'></textarea>
+					</div>		
+				{% endfor %}				
+			</div>
+		
+			<div class='vocabulary_add_info_button'>
+				<div class='vocabulary_add_info_button_inner'>More</div>
+			</div>
+			<div class='vocabulary_status_info'></div>
+			
+		</div>
+	</div>	
+	
+	<div class='vocabulary_more_outter_additional'>
+		<div class='vocabulary_more_inner_additional'>
+			<div id='definition' class='vocabulary_more_content_definition_additional'>
+				<div class='vocabulary_more_title_additional'>Definition: </div>
+			</div>
+			
+			<div id='synonym' class='vocabulary_more_content_synonym_additional'>
+				<div class='vocabulary_more_title_additional'>Synonyms: </div>
+			</div>
+
+			<div id='example' class='vocabulary_more_content_example_additional'>
+				<div class='vocabulary_more_title_additional'>Example Sentences: </div>
+			</div>		
+		</div>
+	</div>
+		
+</div>
+
+{% endfor %}
+<div id='garbage_collection'></div>
+<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+<script type='text/javascript' src="/media/vocabulary_training/study_mode.js"></script>
+
